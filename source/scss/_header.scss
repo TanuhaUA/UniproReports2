@@ -1,0 +1,9 @@
+.header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid $lightGray;
+
+  &__title {
+    text-align: center;
+    padding: 10px 0;
+  }
+}

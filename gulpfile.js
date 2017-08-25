@@ -3,9 +3,11 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     csso = require('gulp-clean-css'),
     rename = require('gulp-rename');
+    plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
     return gulp.src('source/scss/style.scss')
+        .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 20 versions']
