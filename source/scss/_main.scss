@@ -1,4 +1,11 @@
 body {
   font: normal 16px/1.4  Verdana, Arial, sans-serif;
-  color: $mainTextColor;
+  color: $mainColor;
+}
+.main {
+  padding: 20px;
+
+  &__title {
+    text-align: center;
+  }
 }

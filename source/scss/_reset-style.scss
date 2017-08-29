@@ -23,6 +23,6 @@ a:hover,
 a:visited,
 a:focus {
   text-decoration: none;
-  color: inherit;
+  color: $mainColor;
   cursor: pointer;
 }

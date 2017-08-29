@@ -4,7 +4,7 @@ Reports = React.createClass({
   render: ->
     return `(
       <div className="reports">
-          Reports page
+          <h3 className="main__title">Reports page</h3>
       </div>
     )`
 })
