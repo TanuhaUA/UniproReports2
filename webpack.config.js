@@ -1,26 +1,21 @@
 module.exports = {
-    entry: './source/js/app.coffee',
+    entry: './source/js/app.js',
     output: {
         filename: './public/js/bundle.js'
     },
     module: {
         loaders: [
             {
-                test: /\.coffee$/,
-                exclude: /node-modules/,
+                test: /\.js$/,
                 loader: 'babel-loader',
                 query: {
                     presets: ['react', 'es2015']
                 }
-            },
-            {
-                test: /\.coffee$/,
-                loader: 'coffee-jsx-loader'
             }
         ]
     },
     resolve: {
-        extensions: ['.js', '.coffee']
+        extensions: ['.js']
     },
     watch: true
 };
